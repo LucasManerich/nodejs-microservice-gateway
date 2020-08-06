@@ -1,0 +1,8 @@
+services:
+  - name: search-engine
+    route: /search 
+    servers:
+      - url: http://127.0.0.1:3200
+      - url: http://127.0.0.1:3201
+      - url: http://127.0.0.1:3202
+

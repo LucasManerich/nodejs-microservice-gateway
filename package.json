@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-microservice-gateway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LucasManerich/nodejs-microservice-gateway.git",
+  "author": "Lucas <lucasmanerich.dev@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon --watch \"src/\" --exec \"ts-node src/app.ts\" -e ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@types/express-http-proxy": "^1.6.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2",
+    "helmet": "^4.0.0",
+    "yaml": "^1.10.0"
+  }
+}
